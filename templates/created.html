@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Created</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Note Created</h1>
+
+        <!-- Box with pre tag to hold ONLY the link -->
+        <pre class="note-message" id="generatedLink">{{ message }}</pre>
+
+        <button onclick="copyToClipboard()">Copy Link</button>
+        <a href="/" class="button yellow">Go Back</a>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const link = document.getElementById('generatedLink').textContent.trim();
+            navigator.clipboard.writeText(link).then(() => {
+                alert("Link copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy.");
+            });
+        }
+    </script>
+</body>
+</html>

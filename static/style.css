@@ -1,0 +1,135 @@
+/* === GLOBAL STYLES === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9; /* White background */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button, a.button {
+    font-size: 16px;
+    padding: 12px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    margin: 5px;
+}
+
+button:hover, a.button:hover {
+    opacity: 0.8;
+}
+
+/* === PRIMARY BLUE BUTTON === */
+button.blue, a.button.blue {
+    background: #0077cc;  /* Clean blue */
+    color: white;
+}
+
+/* === SECONDARY YELLOW BUTTON === */
+button.yellow, a.button.yellow {
+    background: #e6b800;  /* Darker yellow */
+    color: white;
+}
+
+/* === BUTTON CONTAINERS === */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* === PRE-STYLED NOTE CONTENT === */
+pre {
+    background-color: #f1f3f5;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto; /* Horizontal scroll if needed */
+}
+
+
+
+.note-message {
+    background-color: #f1f3f5;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.link-container {
+    background-color: #f1f3f5;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.link-container a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}

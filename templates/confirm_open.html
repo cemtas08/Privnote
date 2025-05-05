@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Opening Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Are you sure you want to open this note?</h2>
+        <p>This note will be deleted once you open it. Click "OK" to proceed or "Cancel" to go back.</p>
+
+        <form method="POST">
+            <div class="button-container">
+                <button type="submit" class="blue">Yes, Open</button>
+                <a href="/" class="button yellow">No, Go Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* === GLOBAL STYLES === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9; /* Same background as other pages */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* === CONTAINER AND CARD === */
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* === TYPOGRAPHY === */
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: left;
+    color: #555;
+}
+
+/* === TEXTAREA === */
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: 400;
+    resize: vertical;
+}
+
+textarea::placeholder {
+    color: #888;
+}
+
+/* === BUTTON === */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #0077cc; /* Consistent primary blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3; /* Darker on hover */
+}
+
+button:active {
+    background-color: #004b8a;
+}

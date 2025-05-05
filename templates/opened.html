@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypted Note</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Your Decrypted Note</h2>
+        <pre id="noteContent">{{ note }}</pre>
+
+        <div class="button-container">
+            <button onclick="copyToClipboard()" class="blue">Copy Note</button>
+            <a href="/" class="button yellow">Go Back</a>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const noteContent = document.getElementById('noteContent').textContent;
+            navigator.clipboard.writeText(noteContent).then(() => {
+                alert("Note copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy.");
+            });
+        }
+    </script>
+</body>
+</html>
